@@ -14,7 +14,6 @@ import { a } from '@react-spring/three';
 export default function Animal({ ...props }) {
 	const [hovered, setHovered] = useState(false);
 	const [current, setCurrent] = useState(null);
-	const [explanationTitle, setExplanationTitle] = useState('just hover');
 
 	const [titles] = useState({
 		'Material.001': 'nükleüs',
@@ -26,21 +25,21 @@ export default function Animal({ ...props }) {
 		'Material.008': 'mitokondri',
 		'Material.009': 'nükleüs çekirdek',
 		'Material.010': 'nükleüs içerisi',
-		'Material.011': 'lizozom',
+		'Material.011': 'koful',
 	});
 
 	const [explanations] = useState({
 		nükleüs: 'çekirdek',
 		benekler: 'benekler',
 		jöle: 'jöle katmanı',
-		'endoplazmik retikulum': 'er',
+		'endoplazmik retikulum': 'endoplazmik retikulum',
 		'golgi cisimciği': 'golgi',
 		'mitokondri içerisi': 'enerji',
 		mitokondri: 'enerji merkezi',
-		'nükleüs kabuk': '',
-		'nükleüs içerisi': '',
+		'nükleüs kabuk': 'nükleüs kabuk',
+		'nükleüs içerisi': 'nükleüs içerisi',
 		'nükleüs çekirdek': 'çekirdek',
-		lizozom: 'lizozom',
+		koful: 'koful',
 	});
 
 	useEffect(() => {
@@ -52,11 +51,7 @@ export default function Animal({ ...props }) {
 			document.getElementById('explanation').innerHTML =
 				explanations[titles[current]];
 		}
-		// if (explanations[explanationTitle] !== undefined) {
-		// 	document.getElementById('explanation').innerHTML =
-		// 		explanations[explanationTitle];
-		// }
-	}, [hovered, current, explanations, explanationTitle, titles]);
+	}, [hovered, current, explanations, titles]);
 
 	const group = useRef();
 	const { nodes, materials } = useGLTF('/animal.gltf');
@@ -99,9 +94,6 @@ export default function Animal({ ...props }) {
 						position={[-0.7, -3.5, 2]}
 						rotation={[0, -0.06, 3.06]}
 						scale={0.05}
-						onPointerDown={(e) => {
-							setExplanationTitle('mitokondri');
-						}}
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.008'].name);
@@ -118,9 +110,6 @@ export default function Animal({ ...props }) {
 						material={materials['Material.001']}
 						position={[-0.39, 0.61, 0.01]}
 						scale={1.14}
-						onPointerDown={(e) => {
-							setExplanationTitle('nükleüs kabuk');
-						}}
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.001'].name);
@@ -137,9 +126,6 @@ export default function Animal({ ...props }) {
 						material={materials['Material.005']}
 						position={[-0.39, 0.61, 0.01]}
 						scale={1.14}
-						onPointerDown={(e) => {
-							setExplanationTitle('endoplazmik retikulum');
-						}}
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.005'].name);
@@ -157,9 +143,6 @@ export default function Animal({ ...props }) {
 						position={[1.15, -2, 1.5]}
 						rotation={[0, 0, 0.76]}
 						scale={0.41}
-						onPointerDown={(e) => {
-							setExplanationTitle('golgi');
-						}}
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.006'].name);
@@ -193,9 +176,6 @@ export default function Animal({ ...props }) {
 						position={[1.5, 1, 1]}
 						rotation={[0.01, -0.04, 1.65]}
 						scale={0.19}
-						onPointerDown={(e) => {
-							setExplanationTitle('lizozom');
-						}}
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.011'].name);
@@ -212,9 +192,6 @@ export default function Animal({ ...props }) {
 						material={materials['Material.009']}
 						position={[-0.38, 0.55, 0.2]}
 						scale={0.26}
-						onPointerDown={(e) => {
-							setExplanationTitle('nükleüs çekirdek');
-						}}
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.009'].name);
@@ -231,9 +208,6 @@ export default function Animal({ ...props }) {
 						material={materials['Material.010']}
 						position={[-0.38, 0.62, 0]}
 						scale={0.98}
-						onPointerDown={(e) => {
-							setExplanationTitle('nükleüs içerisi');
-						}}
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.010'].name);
@@ -250,9 +224,6 @@ export default function Animal({ ...props }) {
 						material={materials['Material.003']}
 						position={[-0.39, 0.61, 0.01]}
 						scale={1.14}
-						onPointerDown={(e) => {
-							setExplanationTitle('benekler');
-						}}
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.003'].name);
@@ -270,9 +241,6 @@ export default function Animal({ ...props }) {
 						position={[-0.7, -3.5, 2]}
 						rotation={[0, -0.06, 3.06]}
 						scale={0.05}
-						onPointerDown={(e) => {
-							setExplanationTitle('mitokondri içerisi');
-						}}
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.007'].name);
@@ -284,10 +252,6 @@ export default function Animal({ ...props }) {
 					/>
 				</group>
 			</a.group>
-			{/* <a.mesh position={markerPosition} >
-      <sphereGeometry args={[0.08]} />
-      <meshStandardMaterial color="red" />
-    </a.mesh> */}
 		</>
 	);
 }
