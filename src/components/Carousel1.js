@@ -3,7 +3,7 @@ import Carousel from "better-react-carousel";
 import "../styles/carousel1.css";
 function Carousel1() {
   return (
-    <div style={{ width: "100%" }}>
+    <div className="carouseldiv">
       <div className="div1" />
       <div className="carouselcontainer">
         <Carousel cols={1} rows={1} gap={0} loop>
