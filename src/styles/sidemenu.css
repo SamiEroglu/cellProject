@@ -1,0 +1,33 @@
+.sm-container {
+  position: fixed;
+}
+.homebutton {
+  position: fixed;
+  top: 45%;
+  left: 3%;
+  width: 2.5vw;
+  height: auto;
+  color: rgba(255, 255, 255, 0.774);
+}
+.upbutton {
+  position: fixed;
+  top: 10%;
+  left: 3%;
+  width: 2.5vw;
+  height: auto;
+  color: rgba(255, 255, 255, 0.774);
+}
+.downbutton {
+  position: fixed;
+  top: 86%;
+  left: 3%;
+  width: 2.5vw;
+  height: auto;
+  color: rgba(255, 255, 255, 0.774);
+}
+.sidemenu-pos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 17rem;
+}
