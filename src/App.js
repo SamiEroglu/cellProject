@@ -1,5 +1,6 @@
 import "./App.css";
 import Carousel1 from "./components/Carousel1";
+import Carousel2 from "./components/Carousel2";
 import Firstpage from "./components/Firstpage";
 import Sidemenu from "./components/Sidemenu";
 
@@ -15,9 +16,9 @@ function App() {
         </div>
       </body>
       <Firstpage />
-
       <Sidemenu />
       <Carousel1 />
+      <Carousel2 />
     </div>
   );
 }
