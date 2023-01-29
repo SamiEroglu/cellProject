@@ -12,7 +12,7 @@ const handleClickScroll = () => {
 
 function Firstpage() {
   return (
-    <div>
+    <div className="fpsize">
       <div className="fp-container">
         <div className="fp-isim">
           Matematik ve Fen Bilimleri Eğitimi Anabilim Dalı / Fen Eğitimi Bilim
