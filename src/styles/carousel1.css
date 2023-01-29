@@ -1,0 +1,11 @@
+.carouselcontainer {
+  width: 80%;
+  height: 45.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carouselcontainer span {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
