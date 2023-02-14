@@ -16,30 +16,34 @@ export default function Animal({ ...props }) {
 	const [current, setCurrent] = useState(null);
 
 	const [titles] = useState({
-		'Material.001': 'nükleüs',
-		'Material.003': 'benekler',
+		'Material.001': 'Çekirdek',
+		'Material.003': 'Çekirdek',
 		'Material.004': 'jöle',
-		'Material.005': 'endoplazmik retikulum',
-		'Material.006': 'golgi cisimciği',
-		'Material.007': 'mitokondri içerisi',
-		'Material.008': 'mitokondri',
-		'Material.009': 'nükleüs çekirdek',
-		'Material.010': 'nükleüs içerisi',
-		'Material.011': 'koful',
+		'Material.005': 'Endoplazmik Retikulum',
+		'Material.006': 'Golgi Cisimciği',
+		'Material.007': 'Mitokondri',
+		'Material.008': 'Mitokondri',
+		'Material.009': 'Çekirdek',
+		'Material.010': 'Çekirdek',
+		'Material.011': 'Koful',
 	});
 
 	const [explanations] = useState({
-		nükleüs: 'çekirdek',
+		Çekirdek:
+			'Hücrenin yönetim ve denetim merkezidir. Çekirdeğin içerisinde canlının kalıtsal özelliklerini (saç rengi, göz rengi, yaprak şekli gibi) belirleyen yapılar bulunur. Bakteri gibi bazı ilkel canlılarda çekirdek bulunmaz, bu canlıların kalıtsal özelliklerini belirleyen yapılar sitoplazmanın içerisinde dağınık olarak bulunur.',
 		benekler: 'benekler',
 		jöle: 'jöle katmanı',
-		'endoplazmik retikulum': 'endoplazmik retikulum',
-		'golgi cisimciği': 'golgi',
+		'Endoplazmik Retikulum':
+			'Hücrede madde iletiminden sorumlu organeldir. Hücrenin içinde maddelerin taşındığı bit tünel sistemi gibidir. Bitki ve hayvan hücrelerinde ortak olarak bulunur.',
+		'Golgi Cisimciği':
+			'Üst üste dizilmiş keseciklerden oluşur. Hücrede ter, süt gibi salgı maddelerinin üretiminden ve paketlenmesinden sorumludur. Bitki ve hayvan hücrelerinde ortak olarak bulunur.',
 		'mitokondri içerisi': 'enerji',
-		mitokondri: 'enerji merkezi',
+		Mitokondri:
+			'Hücrenin enerji üretim merkezidir. Üretilen enerji hücrenin yaşamsal faaliyetlerin gerçekleştirilmesinde kullanılır. Bitki ve hayvan hücrelerinde ortak bulunur.',
 		'nükleüs kabuk': 'nükleüs kabuk',
-		'nükleüs içerisi': 'nükleüs içerisi',
 		'nükleüs çekirdek': 'çekirdek',
-		koful: 'koful',
+		Koful:
+			'Hücre için zararlı ve fazla olan maddeleri depolayan kese şeklindeki organeldir. Bitki ve hayvan hücrelerinde ortak olarak bulunur. Ancak bitki hücrelerinde kofullar büyük ve az iken hayvan hücrelerinde ise küçük ve çok sayıdadır.',
 	});
 
 	useEffect(() => {
@@ -65,7 +69,7 @@ export default function Animal({ ...props }) {
 
 				// onClick={() => setIsZoom(!isZoom)}
 			>
-				<group rotation={[ 3.1, 3.05, 180]} scale={0.42}>
+				<group rotation={[3.1, 3.05, 180]} scale={0.42}>
 					{/* saydam tabaka */}
 					{/* <mesh
 						className="cell-jelly"
@@ -88,7 +92,7 @@ export default function Animal({ ...props }) {
 
 					{/* üçlü mitokondri */}
 					<mesh
-						className="mitochondria"
+						className='mitochondria'
 						geometry={nodes.Sphere002_0.geometry}
 						material={materials['Material.008']}
 						position={[-0.7, -3.5, 2]}

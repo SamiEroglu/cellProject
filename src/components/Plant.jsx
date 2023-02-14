@@ -9,35 +9,44 @@ export default function Plant(props) {
 	const [current, setCurrent] = useState(null);
 
 	const [titles] = useState({
-		cytoplasm_TT_checker_512x512_UV_GRID_0: 'cytoplasm',
-		chloroplastin_TT_checker_512x512_UV_GRID_0: 'chloroplast in',
-		chloroplastout_TT_checker_512x512_UV_GRID_0: 'chloroplast out',
-		nucleus_TT_checker_512x512_UV_GRID_0: 'nucleus',
-		ribosomes_TT_checker_512x512_UV_GRID_0: 'ribosomes',
-		roughER_TT_checker_512x512_UV_GRID_0: 'rough ER',
-		golgiappratus_TT_checker_512x512_UV_GRID_0: 'golgi appratus',
-		lysosome_TT_checker_512x512_UV_GRID_0: 'lysosome',
+		cytoplasm_TT_checker_512x512_UV_GRID_0: 'Sitoplazma',
+		chloroplastin_TT_checker_512x512_UV_GRID_0: 'Kloroplast',
+		chloroplastout_TT_checker_512x512_UV_GRID_0: 'Kloroplast',
+		nucleus_TT_checker_512x512_UV_GRID_0: 'Çekirdek',
+		ribosomes_TT_checker_512x512_UV_GRID_0: 'Ribozom',
+		roughER_TT_checker_512x512_UV_GRID_0: 'Endoplazmik Retikulum',
+		golgiappratus_TT_checker_512x512_UV_GRID_0: 'Golgi Cisimciği',
+		lysosome_TT_checker_512x512_UV_GRID_0: 'Lizozom',
 		peroxisome_TT_checker_512x512_UV_GRID_0: 'peroxisome',
-		vacuole_TT_checker_512x512_UV_GRID_0: 'vacuole',
-		mitochondria_TT_checker_512x512_UV_GRID_0: 'mitochondria',
-		smoothER_TT_checker_512x512_UV_GRID_0: 'smooth ER',
-		cell_TT_checker_512x512_UV_GRID_0: 'cell wall',
+		vacuole_TT_checker_512x512_UV_GRID_0: 'Koful',
+		mitochondria_TT_checker_512x512_UV_GRID_0: 'Mitokondri',
+		smoothER_TT_checker_512x512_UV_GRID_0: 'Endoplazmik Retikulum',
+		cell_TT_checker_512x512_UV_GRID_0: 'Hücre Duvarı',
 	});
 
 	const [explanations] = useState({
-		cytoplasm: 'cytoplasm',
-		'chloroplast in': 'chloroplast in',
-		'chloroplast out': 'chloroplast out',
-		nucleus: 'nucleus',
-		ribosomes: 'ribosomes',
+		Sitoplazma:
+			'Çekirdek ile hücre zarı arasındaki sıvıyı dolduran yumurta akı kıvamında, yarı saydam ve akışkan bir sıvıdır. Sıvı olduğu için büyük oranda sudan oluşur. Sitoplazma içerisinde bulunan beslenme, boşaltım, solunum, boşaltım gibi yaşamsal faaliyetleri gerçekleştiren yapılara organel denir. Sitoplazma içerisinde yer alan organeller mitokondri, kloroplast, koful, sentriyol, ribozom, golgi cisimciği, endoplazmik retikulum, lizozomdur.',
+		Kloroplast:
+			'Yalnızca bitki hücrelerinde bulunur. Yapısında bulunan krolofil ile bitkilere yeşil renk verir. Fotosentez yaparak besin ve oksijen üretir.',
+		Çekirdek:
+			'Hücrenin yönetim ve denetim merkezidir. Çekirdeğin içerisinde canlının kalıtsal özelliklerini (saç rengi, göz rengi, yaprak şekli gibi) belirleyen yapılar bulunur. Bakteri gibi bazı ilkel canlılarda çekirdek bulunmaz, bu canlıların kalıtsal özelliklerini belirleyen yapılar sitoplazmanın içerisinde dağınık olarak bulunur.',
+		Ribozom:
+			'Hücrede protein sentezinde görevlidir. Hücredeki en küçük organeldir. Bitki ve hayvan hücrelerinde ortak olarak bulunur.',
 		'rough ER': 'rough ER',
-		'golgi appratus': 'golgi appratus',
-		lysosome: 'lysosome',
+		'Golgi Cisimciği':
+			'Üst üste dizilmiş keseciklerden oluşur. Hücrede ter, süt gibi salgı maddelerinin üretiminden ve paketlenmesinden sorumludur. Bitki ve hayvan hücrelerinde ortak olarak bulunur.',
+		Lizozom:
+			'Görevi hücre içi sindirimdir. Besinlerin ve büyük moleküllerin parçalanmasından sorumludur. Ayrıca yaşlanan hücrelerin ve organellerin yok edilmesinde de görev alır. Lizozom hayvan hücrelerinde ve ilkel bitki hücrelerinde bulunur.',
+
+		Koful:
+			'Hücre için zararlı ve fazla olan maddeleri depolayan kese şeklindeki organeldir. Bitki ve hayvan hücrelerinde ortak olarak bulunur. Ancak bitki hücrelerinde kofullar büyük ve az iken hayvan hücrelerinde ise küçük ve çok sayıdadır.',
+		Mitokondri:
+			'Hücrenin enerji üretim merkezidir. Üretilen enerji hücrenin yaşamsal faaliyetlerin gerçekleştirilmesinde kullanılır. Bitki ve hayvan hücrelerinde ortak bulunur.',
+		'Endoplazmik Retikulum':
+			'Hücrede madde iletiminden sorumlu organeldir. Hücrenin içinde maddelerin taşındığı bit tünel sistemi gibidir. Bitki ve hayvan hücrelerinde ortak olarak bulunur.',
+		'Hücre Duvarı': 'Hücre Duvarı',
 		peroxisome: 'peroxisome',
-		vacuole: 'vacuole',
-		mitochondria: 'mitochondria',
-		'smooth ER': 'smooth ER',
-		'cell wall': 'cell wall',
 	});
 
 	useEffect(() => {
@@ -68,7 +77,7 @@ export default function Plant(props) {
 				<mesh
 					geometry={nodes.cytoplasm_TT_checker_512x512_UV_GRID_0.geometry}
 					material={materials.TT_checker_512x512_UV_GRID}
-					position={[0, -18.04, 8.3]}
+					position={[1, -18.04, 8.3]}
 					rotation={[-Math.PI / 2, 0, 0]}
 					scale={100}
 					onPointerOver={() => {
@@ -185,7 +194,7 @@ export default function Plant(props) {
 						setCurrent('hover over the cell to see the name');
 					}}
 				/>
-				<mesh
+				{/* <mesh
 					geometry={nodes.peroxisome_TT_checker_512x512_UV_GRID_0.geometry}
 					material={materials.TT_checker_512x512_UV_GRID}
 					position={[0.98, 0.05, 0.06]}
@@ -199,7 +208,7 @@ export default function Plant(props) {
 						setHovered(false);
 						setCurrent('hover over the cell to see the name');
 					}}
-				/>
+				/> */}
 				<mesh
 					geometry={nodes.vacuole_TT_checker_512x512_UV_GRID_0.geometry}
 					material={materials.TT_checker_512x512_UV_GRID}
