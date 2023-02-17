@@ -12,7 +12,6 @@ function Plantcell() {
           <Canvas
             style={{
               height: "90vh",
-              width: "100%",
               backgroundImage: `url('img/mercek.png')`,
               backgroundRepeat: "no-repeat",
               backgroundAttachment: "inherit",

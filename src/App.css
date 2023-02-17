@@ -1,7 +1,13 @@
+@font-face {
+  font-family: "republica";
+  src: url("/public/Cocogoose_trial.otf") format('truetype');
+}
 html,
 body {
   margin: 0;
   background-color: black;
+  font-family: "republica";
+  overflow: hidden;
 }
 .App {
   text-align: center;

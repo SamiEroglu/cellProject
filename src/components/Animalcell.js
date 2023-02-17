@@ -15,7 +15,7 @@ function Animalcell() {
               backgroundImage: `url('img/mercek.png')`,
               backgroundRepeat: "no-repeat",
               backgroundAttachment: "inherit",
-              backgroundPosition: "50% 60%",
+              backgroundPosition: "50% 85%",
               backgroundSize: "40vw",
             }}
           >
