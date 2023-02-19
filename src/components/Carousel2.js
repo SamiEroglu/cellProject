@@ -272,7 +272,23 @@ function Carousel2() {
             </Carousel.Item>
           </Carousel>
         </div>
-        <div className="div3" />
+        <div className="div3">
+        <p>Mayoz bölünme mayoz 1 ve mayoz 2 evreleri olmak üzere iki evrede gerçekleşir.</p>	
+        <p>Mayoz bölünme birbirini takip eden evreler sonucu gerçekleşir:</p>	
+        <p>1-	Mayoz bölünmeye başlamadan önce DNA kendini eşler ve kalıtsal madde miktarı iki katına çıkar. Kromozomlar belirgin hale gelir.</p>	
+        <p>2-	Mayoz bölünmenin ilk evresinde birisi anneden diğeri babadan gelen ve aynı özellikleri taşıyan kromozomlar (homolog kromozom) yan yana gelerek birbiri üzerine kıvrılır.</p>	
+        <p>3-	Kromozomlar arasında parça değişimi gerçekleşir.</p>	
+        <p>4-	Parça değişimi gerçekleştikten sonra bu kromozomlar farklı kutuplara çekilir. </p>	
+        <p>5-	Mayoz 1’in sonunda kromozom sayısı yarıya inmiş iki hücre oluşur.</p>	
+        <p>6-	Mayoz 2 mitoz bölünmeye benzer şekilde gerçekleşir.</p>	
+        <p>7-	Mayoz 2 sonunda genetik yapısı birbirinden farklı 4 adet hücre oluşur.</p>	
+        <p>Mayoz 1 de gerçekleşen parça değişimi sayesinde oluşan hücrelerin genetik özellikler anne, babadan ve birbirinden farklıdır.</p>	
+        <p>Eşey hücrelerinin birleşmesiyle gerçekleşen üreme şekline eşeyli üreme denir.</p>	
+        <p>Eşeyli üreyen canlılarda eşey hücrelerinin oluşması için gerçekleşen bölünme mayoz bölünmedir.</p>	
+        <p>Dişi eşey hücresine yumurta, erkek eşey hücresine ise sperm denir.</p>	
+        <p>Yumurta ve spermin birleşmesine döllenme denir. Döllenme sonucu zigot oluşur. Zigot mitoz bölünmeler geçirir böylece büyür ve yeni bir canlı oluşur.</p>	
+
+        </div>
       </div>
     </div>
   );

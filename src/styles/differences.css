@@ -1,0 +1,61 @@
+.diffcontainer {
+	width: 100%;
+	height: 48.8vw;
+	display: flex;
+	flex-direction: column;
+}
+.title-container {
+	height: 15%;
+	color: rgb(160, 160, 160);
+	font-size: 3.5vw;
+}
+.diff-container {
+    height: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    
+}
+.order-cont {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.plantcell-diff {
+	width: 63%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	gap: 1vw;
+    
+}
+.animalcell-diff {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	gap: 1vw;
+    
+}
+.plantcelldiff-cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1vw;
+    background-color: rgba(122, 115, 115, 0.144);
+    border-radius: 100px;
+    border-style:groove;
+    border-color: rgba(122, 115, 115, 0.537);
+}
+.animalcelldiff-cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1vw;
+    background-color: rgba(122, 115, 115, 0.144);
+    border-radius: 100px;
+    border-style:groove;
+    border-color: rgba(122, 115, 115, 0.537);
+}
