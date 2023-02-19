@@ -6,17 +6,11 @@ import Differences from "./components/Differences";
 import Firstpage from "./components/Firstpage";
 import Sidemenu from "./components/Sidemenu";
 
+  
 function App() {
+  
   return (
     <div className="App">
-      <body>
-        <div class="bg-animation">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div id="stars4"></div>
-        </div>
-      </body>
       <Firstpage />
       <Differences/>
       <Carousel1 />
