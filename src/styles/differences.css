@@ -27,6 +27,7 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: flex-start;
+    text-align: start;
 	gap: 1vw;
     
 }
@@ -36,12 +37,12 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: flex-start;
+    text-align: start;
 	gap: 1vw;
     
 }
 .plantcelldiff-cont {
     height: 35vw;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

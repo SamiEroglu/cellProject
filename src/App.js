@@ -1,6 +1,7 @@
 import "./App.css";
 import Carousel1 from "./components/Carousel1";
 import Carousel2 from "./components/Carousel2";
+import CarouselDifferences from "./components/CarouselDifferences";
 import Differences from "./components/Differences";
 import Firstpage from "./components/Firstpage";
 import Sidemenu from "./components/Sidemenu";
@@ -20,6 +21,7 @@ function App() {
       <Differences/>
       <Carousel1 />
       <Carousel2 />
+      <CarouselDifferences/>
       <Sidemenu />
     </div>
   );

@@ -37,11 +37,11 @@ function Sidemenu() {
 	};
 	const toggleVisible1 = () => {
 		const scrolled = document.documentElement.scrollTop;
-		if (scrolled > 700 && scrolled < 3600) {
+		if (scrolled > 700 && scrolled < 4300) {
 			setVisible1(true);
 		} else if (scrolled <= 700) {
 			setVisible1(false);
-		}else if (scrolled >= 3600){
+		}else if (scrolled >= 4300){
       setVisible1(false);
     }
 	};
