@@ -21,7 +21,7 @@ function Firstpage() {
 					<div className="hclogo" onClick={handleClickScroll}>
 						<Huclogo />
 					</div>
-          <a href="abc.pdf" target="_blank">
+          <a href="CV.pdf" target="_blank">
 					<CVlogo/>
           </a>
 				</div>
