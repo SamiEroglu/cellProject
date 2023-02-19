@@ -17,10 +17,10 @@ function App() {
         </div>
       </body>
       <Firstpage />
-      <Sidemenu />
       <Differences/>
       <Carousel1 />
       <Carousel2 />
+      <Sidemenu />
     </div>
   );
 }
