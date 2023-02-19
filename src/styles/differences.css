@@ -40,6 +40,8 @@
     
 }
 .plantcelldiff-cont {
+    height: 35vw;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -48,8 +50,10 @@
     border-radius: 100px;
     border-style:groove;
     border-color: rgba(122, 115, 115, 0.537);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
 .animalcelldiff-cont {
+    height: 35vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -58,4 +62,5 @@
     border-radius: 100px;
     border-style:groove;
     border-color: rgba(122, 115, 115, 0.537);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
