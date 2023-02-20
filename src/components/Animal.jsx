@@ -25,7 +25,9 @@ export default function Animal({ ...props }) {
 		'Material.008': 'Mitokondri',
 		'Material.009': 'Çekirdek',
 		'Material.010': 'Çekirdek',
-		'Material.011': 'Koful',
+		'Material.011': 'Sentriyol',
+		'Material.012': 'Koful',
+		'Hücre Zarı': 'Hücre Zarı',
 	});
 
 	const [explanations] = useState({
@@ -44,6 +46,10 @@ export default function Animal({ ...props }) {
 		'nükleüs çekirdek': 'çekirdek',
 		Koful:
 			'Hücre için zararlı ve fazla olan maddeleri depolayan kese şeklindeki organeldir. Bitki ve hayvan hücrelerinde ortak olarak bulunur. Ancak bitki hücrelerinde kofullar büyük ve az iken hayvan hücrelerinde ise küçük ve çok sayıdadır.',
+		Sentriyol:
+			'Yalnızca hayvan hücrelerinde bulunur. Çiftler halinde bulunan ve hücre bölünmesinde görevli olan organeldir. İki farklı silindirik sentriyol bir araya gelerek sentrozomları oluşturur.',
+		'Hücre Zarı':
+			'Hücreler hücre zarı adı verilen bir zar ile çevrilidir. Hücre zarı, sitoplazmayı dıştan çevreleyerek sitoplazmanın dağılmasını önler, hücreyi korur. Hücre zarı canlıdır, esnektir, ince ve saydamdır, seçici geçirgendir.',
 	});
 
 	useEffect(() => {
@@ -58,7 +64,7 @@ export default function Animal({ ...props }) {
 	}, [hovered, current, explanations, titles]);
 
 	const group = useRef();
-	const { nodes, materials } = useGLTF('/animal.gltf');
+	const { nodes, materials } = useGLTF('/animalmit.gltf');
 
 	return (
 		<>
@@ -71,15 +77,13 @@ export default function Animal({ ...props }) {
 			>
 				<group rotation={[3.1, 3.05, 180]} scale={0.42}>
 					{/* saydam tabaka */}
-					{/* <mesh
+					<mesh
 						className="cell-jelly"
-						geometry={nodes.Sphere001_0.geometry}
+						geometry={nodes.Sphere001.geometry}
 						material={materials['Material.004']}
-						position={[0.2, 0.29, 0]}
+						position={[0.2, 0, -0.29]}
 						scale={[1.19, 1.27, 1.27]}
-						onPointerDown={(e) => {
-							setExplanationTitle('jöle');
-						}}
+						opacity={[0.3]}
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.004'].name);
@@ -88,15 +92,15 @@ export default function Animal({ ...props }) {
 							setHovered(false);
 							setCurrent('hover over the cell to see the name');
 						}}
-					/> */}
+					/>
 
 					{/* üçlü mitokondri */}
 					<mesh
-						className='mitochondria'
-						geometry={nodes.Sphere002_0.geometry}
+						className="mitochondria"
+						geometry={nodes.Sphere002.geometry}
 						material={materials['Material.008']}
-						position={[-0.7, -3.5, 2]}
-						rotation={[0, -0.06, 3.06]}
+						position={[-0.5, 0.02, 3.27]}
+						rotation={[-3.14, 0.08, 3.15]}
 						scale={0.05}
 						onPointerOver={() => {
 							setHovered(true);
@@ -110,9 +114,9 @@ export default function Animal({ ...props }) {
 
 					{/* nükleüs kabuk */}
 					<mesh
-						geometry={nodes.Icosphere_0.geometry}
+						geometry={nodes.Icosphere.geometry}
 						material={materials['Material.001']}
-						position={[-0.39, 0.61, 0.01]}
+						position={[-0.39, -0.01, -0.61]}
 						scale={1.14}
 						onPointerOver={() => {
 							setHovered(true);
@@ -126,9 +130,9 @@ export default function Animal({ ...props }) {
 
 					{/* retikulum */}
 					<mesh
-						geometry={nodes.BezierCurve_0.geometry}
+						geometry={nodes.BezierCurve.geometry}
 						material={materials['Material.005']}
-						position={[-0.39, 0.61, 0.01]}
+						position={[-0.39, -0.01, -0.61]}
 						scale={1.14}
 						onPointerOver={() => {
 							setHovered(true);
@@ -142,10 +146,10 @@ export default function Animal({ ...props }) {
 
 					{/* golgi */}
 					<mesh
-						geometry={nodes.BezierCurve002_0.geometry}
+						geometry={nodes.BezierCurve002.geometry}
 						material={materials['Material.006']}
-						position={[1.15, -2, 1.5]}
-						rotation={[0, 0, 0.76]}
+						position={[1.15, -0.37, 2.2]}
+						rotation={[0, 0.76, 0]}
 						scale={0.41}
 						onPointerOver={() => {
 							setHovered(true);
@@ -157,15 +161,15 @@ export default function Animal({ ...props }) {
 						}}
 					/>
 
-					{/* tabaka */}
+					{/* hücre zarı */}
 					<mesh
-						geometry={nodes.Sphere_0.geometry}
+						geometry={nodes.Sphere.geometry}
 						material={materials.Material}
-						position={[0.2, 0.2, -1]}
-						scale={[1.7, 1.8, 2]}
+						position={[0.2, -0.13, -0.2]}
+						scale={[1.13, 1.2, 1.2]}
 						onPointerOver={() => {
 							setHovered(true);
-							setCurrent(materials.Material.name);
+							setCurrent('Hücre Zarı');
 						}}
 						onPointerOut={() => {
 							setHovered(false);
@@ -173,12 +177,12 @@ export default function Animal({ ...props }) {
 						}}
 					/>
 
-					{/* lizozom ve diğeri */}
+					{/* koful */}
 					<mesh
-						geometry={nodes.Roundcube000_0.geometry}
+						geometry={nodes.Roundcube000.geometry}
 						material={materials['Material.011']}
-						position={[1.5, 1, 1]}
-						rotation={[0.01, -0.04, 1.65]}
+						position={[1.92, -0.21, -0.2]}
+						rotation={[-2.67, 1.48, 2.68]}
 						scale={0.19}
 						onPointerOver={() => {
 							setHovered(true);
@@ -190,11 +194,28 @@ export default function Animal({ ...props }) {
 						}}
 					/>
 
+					{/* sentriyol */}
+					<mesh
+						geometry={nodes.Roundcube002.geometry}
+						material={materials['Material.011']}
+						position={[1.92, -0.21, -0.2]}
+						rotation={[-2.67, 1.48, 2.68]}
+						scale={0.19}
+						onPointerOver={() => {
+							setHovered(true);
+							setCurrent('Material.012');
+						}}
+						onPointerOut={() => {
+							setHovered(false);
+							setCurrent('hover over the cell to see the name');
+						}}
+					/>
+
 					{/* nükleüs çekirdek */}
 					<mesh
-						geometry={nodes.Roundcube001_0.geometry}
+						geometry={nodes.Roundcube001.geometry}
 						material={materials['Material.009']}
-						position={[-0.38, 0.55, 0.2]}
+						position={[-0.38, 0.2, -0.55]}
 						scale={0.26}
 						onPointerOver={() => {
 							setHovered(true);
@@ -208,9 +229,9 @@ export default function Animal({ ...props }) {
 
 					{/* nükleüs pembik yer */}
 					<mesh
-						geometry={nodes.Roundcube_0.geometry}
+						geometry={nodes.Roundcube.geometry}
 						material={materials['Material.010']}
-						position={[-0.38, 0.62, 0]}
+						position={[-0.38, 0, -0.62]}
 						scale={0.98}
 						onPointerOver={() => {
 							setHovered(true);
@@ -224,9 +245,9 @@ export default function Animal({ ...props }) {
 
 					{/* benekler */}
 					<mesh
-						geometry={nodes.Icosphere002_0.geometry}
+						geometry={nodes.Icosphere002.geometry}
 						material={materials['Material.003']}
-						position={[-0.39, 0.61, 0.01]}
+						position={[-0.39, -0.01, -0.61]}
 						scale={1.14}
 						onPointerOver={() => {
 							setHovered(true);
@@ -240,10 +261,10 @@ export default function Animal({ ...props }) {
 
 					{/* mitokondri içerisi */}
 					<mesh
-						geometry={nodes.Sphere005_0.geometry}
+						geometry={nodes.Sphere005.geometry}
 						material={materials['Material.007']}
-						position={[-0.7, -3.5, 2]}
-						rotation={[0, -0.06, 3.06]}
+						position={[-0.38, 0.02, 3.27]}
+						rotation={[-3.14, 0.08, 3.09]}
 						scale={0.05}
 						onPointerOver={() => {
 							setHovered(true);
@@ -260,4 +281,4 @@ export default function Animal({ ...props }) {
 	);
 }
 
-useGLTF.preload('/animal.gltf');
+useGLTF.preload('/animalnew.gltf');
