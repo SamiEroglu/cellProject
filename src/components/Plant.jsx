@@ -45,7 +45,8 @@ export default function Plant(props) {
 			'Hücrenin enerji üretim merkezidir. Üretilen enerji hücrenin yaşamsal faaliyetlerin gerçekleştirilmesinde kullanılır. Bitki ve hayvan hücrelerinde ortak bulunur.',
 		'Endoplazmik Retikulum':
 			'Hücrede madde iletiminden sorumlu organeldir. Hücrenin içinde maddelerin taşındığı bit tünel sistemi gibidir. Bitki ve hayvan hücrelerinde ortak olarak bulunur.',
-		'Hücre Duvarı': 'Hücre Duvarı',
+		'Hücre Duvarı':
+			'Bitki hücrelerinde hücre zarının dışında yer alan ve hücre zarını destekleyen hücre duvarı (hücre çeperi) bulunur. Hücre duvarı cansızdır ve hayvan hücrelerinde bulunmaz.',
 		peroxisome: 'peroxisome',
 	});
 

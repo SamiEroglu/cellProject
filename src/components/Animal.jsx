@@ -28,6 +28,8 @@ export default function Animal({ ...props }) {
 		'Material.011': 'Sentriyol',
 		'Material.012': 'Koful',
 		'Hücre Zarı': 'Hücre Zarı',
+		Ribozom: 'Ribozom',
+		'Material.013': 'Lizozom',
 	});
 
 	const [explanations] = useState({
@@ -50,6 +52,10 @@ export default function Animal({ ...props }) {
 			'Yalnızca hayvan hücrelerinde bulunur. Çiftler halinde bulunan ve hücre bölünmesinde görevli olan organeldir. İki farklı silindirik sentriyol bir araya gelerek sentrozomları oluşturur.',
 		'Hücre Zarı':
 			'Hücreler hücre zarı adı verilen bir zar ile çevrilidir. Hücre zarı, sitoplazmayı dıştan çevreleyerek sitoplazmanın dağılmasını önler, hücreyi korur. Hücre zarı canlıdır, esnektir, ince ve saydamdır, seçici geçirgendir.',
+		Ribozom:
+			'Hücrede protein sentezinde görevlidir. Hücredeki en küçük organeldir. Bitki ve hayvan hücrelerinde ortak olarak bulunur.',
+		Lizozom:
+			'Görevi hücre içi sindirimdir. Besinlerin ve büyük moleküllerin parçalanmasından sorumludur. Ayrıca yaşlanan hücrelerin ve organellerin yok edilmesinde de görev alır. Lizozom hayvan hücrelerinde ve ilkel bitki hücrelerinde bulunur.',
 	});
 
 	useEffect(() => {
@@ -64,7 +70,7 @@ export default function Animal({ ...props }) {
 	}, [hovered, current, explanations, titles]);
 
 	const group = useRef();
-	const { nodes, materials } = useGLTF('/animalmit.gltf');
+	const { nodes, materials } = useGLTF('/animalyso.gltf');
 
 	return (
 		<>
@@ -77,7 +83,7 @@ export default function Animal({ ...props }) {
 			>
 				<group rotation={[3.1, 3.05, 180]} scale={0.42}>
 					{/* saydam tabaka */}
-					<mesh
+					{/* <mesh
 						className="cell-jelly"
 						geometry={nodes.Sphere001.geometry}
 						material={materials['Material.004']}
@@ -92,7 +98,7 @@ export default function Animal({ ...props }) {
 							setHovered(false);
 							setCurrent('hover over the cell to see the name');
 						}}
-					/>
+					/> */}
 
 					{/* üçlü mitokondri */}
 					<mesh
@@ -154,6 +160,22 @@ export default function Animal({ ...props }) {
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.006'].name);
+						}}
+						onPointerOut={() => {
+							setHovered(false);
+							setCurrent('hover over the cell to see the name');
+						}}
+					/>
+					{/* ribozom */}
+					<mesh
+						geometry={nodes.BezierCurve001.geometry}
+						material={materials['Material.006']}
+						position={[1.15, -0.37, 2.2]}
+						rotation={[0, 0.76, 0]}
+						scale={0.41}
+						onPointerOver={() => {
+							setHovered(true);
+							setCurrent('Ribozom');
 						}}
 						onPointerOut={() => {
 							setHovered(false);
@@ -269,6 +291,20 @@ export default function Animal({ ...props }) {
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.007'].name);
+						}}
+						onPointerOut={() => {
+							setHovered(false);
+							setCurrent('hover over the cell to see the name');
+						}}
+					/>
+
+					{/* lizozom */}
+					<mesh
+						geometry={nodes.Sphere003.geometry}
+						material={materials['Material.013']}
+						onPointerOver={() => {
+							setHovered(true);
+							setCurrent(materials['Material.013'].name);
 						}}
 						onPointerOut={() => {
 							setHovered(false);

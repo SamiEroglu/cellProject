@@ -19,7 +19,7 @@ function Animalcell() {
 							backgroundSize: '40vw',
 						}}
 					>
-						<pointLight position={[5, 0, 0]} />
+						<pointLight position={[5, 0, -5]} />
 						<pointLight position={[-10, 0, 15]} />
 						<pointLight position={[-10, 0, 10]} />
 

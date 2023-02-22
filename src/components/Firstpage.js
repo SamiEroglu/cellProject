@@ -1,11 +1,11 @@
-import React from "react";
-import { CVlogo, Huclogo } from "../icon";
-import "../styles/firstpage.css";
-import Secondpage from "./Secondpage";
+import React from 'react';
+import { CVlogo, Huclogo } from '../icon';
+import '../styles/firstpage.css';
+import Secondpage from './Secondpage';
 const handleClickScroll = () => {
-	const element = document.getElementById("section-1");
+	const element = document.getElementById('section-1');
 	if (element) {
-		element.scrollIntoView({ behavior: "smooth" });
+		element.scrollIntoView({ behavior: 'smooth' });
 	}
 };
 
@@ -21,14 +21,15 @@ function Firstpage() {
 					<div className="hclogo" onClick={handleClickScroll}>
 						<Huclogo />
 					</div>
-          <a href="CV.pdf" target="_blank">
-					<CVlogo/>
-          </a>
+					<a href="CV.pdf" target="_blank">
+						<CVlogo />
+					</a>
 				</div>
 				<div className="fp-fakulte">İBRAHİM ENES TOSUN</div>
 				<div className="fp-yazi">
-					Hücre Ünitesi için Geliştirilen WEB 2.0 Aracının Öğrencilerin
-					Sistemsel Düşünme Becerilerine ve Akademik Başarılarına Etkisi
+					Hücre Ünitesi için Geliştirilen WEB 2.0 Aracının Öğrencilerin Akademik
+					Başarılarına, Görsel Alıgılarına ve Sistemsel Düşünme Becerilerine
+					Etkisi
 				</div>
 			</div>
 			<div id="section-1">
@@ -39,4 +40,3 @@ function Firstpage() {
 }
 
 export default Firstpage;
-
