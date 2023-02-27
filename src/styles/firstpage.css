@@ -1,6 +1,6 @@
 @font-face {
   font-family: "republica";
-  src: url("/public/Cocogoose_trial.otf") format('truetype');
+  src: url("/public/Cocogoose_trial.otf") format("truetype");
 }
 .fpsize {
   height: 148vw;
@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:6em;
+  gap: 6em;
   height: 95vh;
 }
 .fp-yazi {
@@ -18,13 +18,11 @@
   width: 60%;
   font-size: 1.2vw;
   font-family: "republica";
-  
 }
 .fp-isim {
   color: aliceblue;
   font-size: 1.3vw;
   font-family: "republica";
-
 }
 .fp-fakulte {
   color: aliceblue;
