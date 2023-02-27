@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Sparkles from "react-sparkle";
 import "../styles/stars.css";
 
 function Stars() {
+  const [isOpen, setIsOpen] = useState(2000);
+  setTimeout(() => {
+    setIsOpen(3);
+  }, 1);
   return (
-    <div className="sparkle">
-      <Sparkles
-        id="spark"
-        flicker={true}
-        fadeOutSpeed={1}
-        count={300}
-        newSparkleOnFadeOut={true}
-        flickerSpeed={"normal"}
-      />
-    </div>
+    <Sparkles
+      style={{ position: "fixed" }}
+      flicker={false}
+      fadeOutSpeed={isOpen}
+      count={300}
+      maxSize={10}
+      minSize={8}
+      flickerSpeed={"normal"}
+    />
   );
 }
 export default Stars;
