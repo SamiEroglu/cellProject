@@ -4,13 +4,13 @@ import { TbArrowBigDown, TbArrowBigTop } from "react-icons/tb";
 import "../styles/sidemenu.css";
 const scrollUp = () => {
   window.scrollBy({
-    top: -940,
+    top: -930,
     behavior: "smooth",
   });
 };
 const scrollDown = () => {
   window.scrollBy({
-    top: 940,
+    top: 930,
     behavior: "smooth",
   });
 };

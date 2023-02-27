@@ -81,7 +81,7 @@ export default function Animal({ ...props }) {
 
 				// onClick={() => setIsZoom(!isZoom)}
 			>
-				<group rotation={[3.5, 1.8, 180]} scale={0.52}>
+				<group position={[-0.2, 0, 0]} rotation={[3.5, 1.8, 180]} scale={0.52}>
 					{/* saydam tabaka */}
 					{/* <mesh
 						className="cell-jelly"

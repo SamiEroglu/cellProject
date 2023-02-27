@@ -6,8 +6,11 @@
 .carousel-title {
   height: 1%;
   width: 100%;
-  color: rgb(160, 160, 160);
+  color: white;
   font-size: 4vw;
+  text-shadow: #ffff 0 0 3px, rgba(240, 46, 170, 0.4) 0 0 10px,
+    rgba(240, 46, 170, 0.3) 0 0 15px, rgba(240, 46, 170, 0.2) 0 0 20px,
+    rgba(240, 46, 170, 0.1) 0 0 25px, rgba(240, 46, 170, 0.05) 0 0 30px;
 }
 .carouselcontainer {
   width: 60%;
@@ -36,6 +39,6 @@
   text-align: start;
   font-size: 0.6vw;
 }
-.div3 p{
-height: fit-content;
+.div3 p {
+  height: fit-content;
 }

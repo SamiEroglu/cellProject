@@ -3,16 +3,17 @@ import Sparkles from "react-sparkle";
 import "../styles/stars.css";
 
 function Stars() {
-	return (
-		<div className="sparkle">
-			<Sparkles
-				flicker={true}
-				fadeOutSpeed={30}
-				count={300}
-				newSparkleOnFadeOut={true}
-				flickerSpeed={"fastest"}
-			/>
-		</div>
-	);
+  return (
+    <div className="sparkle">
+      <Sparkles
+        id="spark"
+        flicker={true}
+        fadeOutSpeed={1}
+        count={300}
+        newSparkleOnFadeOut={true}
+        flickerSpeed={"normal"}
+      />
+    </div>
+  );
 }
 export default Stars;
