@@ -1,73 +1,70 @@
 .diffcontainer {
-	width: 100%;
-	height: 48.5vw;
-	display: flex;
-	flex-direction: column;
+  width: 100%;
+  height: 48.5vw;
+  display: flex;
+  flex-direction: column;
 }
 .title-container {
-	height: 15%;
-	font-size: 3.5vw;
-    text-shadow:#ffff 0 0 3px,
-     rgba(240, 46, 170, 0.4) 0 0 10px,
-     rgba(240, 46, 170, 0.3) 0 0 15px, 
-     rgba(240, 46, 170, 0.2) 0 0 20px, 
-     rgba(240, 46, 170, 0.1) 0 0 25px, 
-     rgba(240, 46, 170, 0.05) 0 0 30px;
-
+  height: 15%;
+  font-size: 3.5vw;
+  text-shadow: #ffff 0 0 3px, rgba(240, 46, 170, 0.4) 0 0 10px,
+    rgba(240, 46, 170, 0.3) 0 0 15px, rgba(240, 46, 170, 0.2) 0 0 20px,
+    rgba(240, 46, 170, 0.1) 0 0 25px, rgba(240, 46, 170, 0.05) 0 0 30px;
 }
 .diff-container {
-    height: 80%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-    
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .order-cont {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 .plantcell-diff {
-	width: 63%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-start;
-    text-align: start;
-	gap: 1vw;
-    
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: start;
+  gap: 1vw;
 }
 .animalcell-diff {
-	width: 70%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-start;
-    text-align: start;
-	gap: 1vw;
-    
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: start;
+  gap: 1vw;
 }
 .plantcelldiff-cont {
-    height: 35vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 1vw;
-    background-color: rgba(122, 115, 115, 0.144);
-    border-radius: 100px;
-    border-style:groove;
-    border-color: rgba(122, 115, 115, 0.537);
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vw;
+  background-color: rgba(122, 115, 115, 0.144);
+  border-radius: 100px;
+  border-style: groove;
+  border-color: rgba(122, 115, 115, 0.537);
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
 }
 .animalcelldiff-cont {
-    height: 35vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 1vw;
-    background-color: rgba(122, 115, 115, 0.144);
-    border-radius: 100px;
-    border-style:groove;
-    border-color: rgba(122, 115, 115, 0.537);
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vw;
+  background-color: rgba(122, 115, 115, 0.144);
+  border-radius: 100px;
+  border-style: groove;
+  border-color: rgba(122, 115, 115, 0.537);
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
 }
