@@ -13,16 +13,19 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   setTimeout(() => {
     setIsLoading(false);
-  }, 2000);
+  }, 2500);
   return (
     <div className="App">
       {isLoading ? (
-        <SemipolarSpinner
-          className="spinner"
-          animationDelay="1000"
-          size="500"
-          color="white"
-        />
+        <div className="loadingcont">
+          <SemipolarSpinner
+            className="spinner"
+            animationDelay="0"
+            size="400"
+            color="#E0E0E0"
+          />
+          <div className="ellipseshadow"></div>
+        </div>
       ) : (
         <div>
           <Stars />
