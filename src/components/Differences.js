@@ -10,7 +10,7 @@ function Differences() {
         <div className="plantcelldiff-cont" style={{ width: "50%" }}>
           <div style={{ height: "10%", fontSize: "2vw" }}>BİTKİ HÜCRESİ</div>
           <div className="order-cont">
-            <div style={{ width: "27%" }}></div>
+            <div style={{ width: "25%" }}></div>
             <div className="plantcell-diff">
               <p>KÖŞELİ BİR YAPIDADIR.</p>
               <p>HÜCRE DUVARI VARDIR.</p>
@@ -25,7 +25,7 @@ function Differences() {
         <div className="animalcelldiff-cont" style={{ width: "50%" }}>
           <div style={{ height: "10%", fontSize: "2vw" }}>HAYVAN HÜCRESİ</div>
           <div className="order-cont">
-            <div style={{ width: "25%" }}></div>
+            <div style={{ width: "23%" }}></div>
             <div className="animalcell-diff">
               <p>YUVARLAK BİR YAPIDADIR.</p>
               <p>HÜCRE DUVARI YOKTUR.</p>

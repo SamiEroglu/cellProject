@@ -3,7 +3,7 @@
   src: url("/public/Cocogoose_trial.otf") format("truetype");
 }
 .fpsize {
-  height: 148vw;
+  height: 146vw;
 }
 .fp-container {
   display: flex;

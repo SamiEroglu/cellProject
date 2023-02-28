@@ -10,7 +10,7 @@ function CarouselDifferences() {
         <div className="plantcelldiff-cont" style={{ width: "50%" }}>
           <div style={{ height: "10%", fontSize: "2vw" }}>MİTOZ HÜCRESİ</div>
           <div className="order-cont">
-            <div style={{ width: "27%" }}></div>
+            <div style={{ width: "20%" }}></div>
             <div className="plantcell-diff">
               <p>VÜCUT HÜCRELERİNDE GÖRÜLÜR.</p>
               <p>SONUCUNDA İKİ HÜCRE OLUŞUR.</p>
@@ -27,7 +27,7 @@ function CarouselDifferences() {
         <div className="animalcelldiff-cont" style={{ width: "50%" }}>
           <div style={{ height: "10%", fontSize: "2vw" }}>MAYOZ HÜCRESİ</div>
           <div className="order-cont">
-            <div style={{ width: "25%" }}></div>
+            <div style={{ width: "20%" }}></div>
             <div className="animalcell-diff">
               <p>ÜREME ANA HÜCRELERİNDE GÖRÜLÜR.</p>
               <p>SONUCUNDA DÖRT HÜCRE OLUŞUR.</p>
