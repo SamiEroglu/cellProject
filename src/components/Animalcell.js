@@ -32,15 +32,15 @@ function Animalcell() {
             Hayvan Hücresi
           </h1>
           <h1 className="explanationcss" id="explanation">
-            <p>mitokondri</p>
-            <p>ribozom</p>
-            <p>endoplazmik retikulum</p>
-            <p>golgi</p>
-            <p>hücre zarı</p>
-            <p>çekirdek</p>
-            <p>sitoplazma</p>
-            <p>lizozom</p>
-            <p>koful</p>
+            <p>Mitokondri</p>
+            <p>Ribozom</p>
+            <p>Endoplazmik retikulum</p>
+            <p>Golgi cisimciği</p>
+            <p>Hücre zarı</p>
+            <p>Çekirdek</p>
+            <p>Sitoplazma</p>
+            <p>Lizozom</p>
+            <p>Koful</p>
           </h1>
         </div>
       </div>

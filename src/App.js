@@ -13,7 +13,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   setTimeout(() => {
     setIsLoading(false);
-  }, 2500);
+  }, 2250);
   return (
     <div className="App">
       {isLoading ? (

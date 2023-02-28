@@ -18,7 +18,7 @@ export default function Animal({ ...props }) {
 	const [titles] = useState({
 		'Material.001': 'Çekirdek',
 		'Material.003': 'Çekirdek',
-		'Material.004': 'jöle',
+		'Material.004': 'Sitoplazma',
 		'Material.005': 'Endoplazmik Retikulum',
 		'Material.006': 'Golgi Cisimciği',
 		'Material.007': 'Mitokondri',
@@ -36,7 +36,7 @@ export default function Animal({ ...props }) {
 		Çekirdek:
 			'Hücrenin yönetim ve denetim merkezidir. Çekirdeğin içerisinde canlının kalıtsal özelliklerini (saç rengi, göz rengi, yaprak şekli gibi) belirleyen yapılar bulunur. Bakteri gibi bazı ilkel canlılarda çekirdek bulunmaz, bu canlıların kalıtsal özelliklerini belirleyen yapılar sitoplazmanın içerisinde dağınık olarak bulunur.',
 		benekler: 'benekler',
-		jöle: 'jöle katmanı',
+		Sitoplazma: 'Çekirdek ile hücre zarı arasındaki sıvıyı dolduran yumurta akı kıvamında, yarı saydam ve akışkan bir sıvıdır. Sıvı olduğu için büyük oranda sudan oluşur. Sitoplazma içerisinde bulunan beslenme, boşaltım, solunum, boşaltım gibi yaşamsal faaliyetleri gerçekleştiren yapılara organel denir. Sitoplazma içerisinde yer alan organeller mitokondri, kloroplast, koful, sentriyol, ribozom, golgi cisimciği, endoplazmik retikulum, lizozomdur.',
 		'Endoplazmik Retikulum':
 			'Hücrede madde iletiminden sorumlu organeldir. Hücrenin içinde maddelerin taşındığı bit tünel sistemi gibidir. Bitki ve hayvan hücrelerinde ortak olarak bulunur.',
 		'Golgi Cisimciği':
@@ -87,9 +87,9 @@ export default function Animal({ ...props }) {
 						className="cell-jelly"
 						geometry={nodes.Sphere001.geometry}
 						material={materials['Material.004']}
-						position={[0.2, 0, -0.29]}
-						scale={[1.19, 1.27, 1.27]}
-						opacity={[0.3]}
+						position={[0.2, -0.5, -0.29]}
+						scale={[1, 1, 1.145]}
+						opacity={[1]}
 						onPointerOver={() => {
 							setHovered(true);
 							setCurrent(materials['Material.004'].name);
@@ -98,7 +98,7 @@ export default function Animal({ ...props }) {
 							setHovered(false);
 							setCurrent('hover over the cell to see the name');
 						}}
-					/> */}
+					/>  */}
 
 					{/* üçlü mitokondri */}
 					<mesh
