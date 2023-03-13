@@ -1,6 +1,15 @@
+@font-face {
+  font-family: "republica";
+  src: url("/public/Cocogoose_trial.otf") format("truetype");
+}
+.marquee {
+  font-family: "republica";
+  font-size: 1.5vw;
+  border-width: 0;
+}
 .diffcontainer {
   width: 100%;
-  height: 48.4vw;
+  height: 48vw;
   display: flex;
   flex-direction: column;
 }
