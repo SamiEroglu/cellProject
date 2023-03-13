@@ -23,7 +23,6 @@
     "react-sparkle": "^2.0.0",
     "react-star-sky": "^1.0.3",
     "redux": "^4.2.1",
-    "styled-components": "^5.3.6",
     "three": "^0.141.0",
     "video-react": "^0.16.0",
     "web-vitals": "^2.1.4"
