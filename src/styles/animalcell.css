@@ -1,49 +1,49 @@
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 .canvastotal {
-  width: 100%;
-  height: 45vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+	width: 100%;
+	height: 45vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 .canvasanimal3d {
-  width: 60%;
-  height: 40vw;
+	width: 60%;
+	height: 40vw;
 }
 .yanyazi {
-  width: 40%;
-  height: 41vw;
-  margin-top: 3vw;
-  margin-right: 6vw;
-  background-color: rgba(122, 115, 115, 0.144);
-  border-radius: 100px;
-  border-style: groove;
-  border-color: rgba(122, 115, 115, 0.537);
-  box-shadow: rgb(240 46 170 / 40%) 0px 5px, rgb(240 46 170 / 30%) 0px 10px,
-    rgb(240 46 170 / 20%) 0px 15px, rgb(240 46 170 / 10%) 0px 20px,
-    rgb(240 46 170 / 5%) 0px 25px;
+	width: 40%;
+	height: 41vw;
+	margin-top: 3vw;
+	margin-right: 6vw;
+	background-color: rgba(122, 115, 115, 0.144);
+	border-radius: 100px;
+	border-style: groove;
+	border-color: rgba(122, 115, 115, 0.537);
+	box-shadow: rgb(240 46 170 / 40%) 0px 5px, rgb(240 46 170 / 30%) 0px 10px,
+		rgb(240 46 170 / 20%) 0px 15px, rgb(240 46 170 / 10%) 0px 20px,
+		rgb(240 46 170 / 5%) 0px 25px;
 }
 .explanationcss {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 0.98vw;
-  gap: 5px;
-  color: white;
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 0.98vw;
+	gap: 5px;
+	color: white;
 }
 .animalcelltitle {
-  color: white;
-  font-size: 2vw;
-  text-shadow: #ffff 0 0 3px, rgba(240, 46, 170, 0.4) 0 0 10px,
-    rgba(240, 46, 170, 0.3) 0 0 15px, rgba(240, 46, 170, 0.2) 0 0 20px,
-    rgba(240, 46, 170, 0.1) 0 0 25px, rgba(240, 46, 170, 0.05) 0 0 30px;
+	color: white;
+	font-size: 2vw;
+	text-shadow: #ffff 0 0 3px, rgba(240, 46, 170, 0.4) 0 0 10px,
+		rgba(240, 46, 170, 0.3) 0 0 15px, rgba(240, 46, 170, 0.2) 0 0 20px,
+		rgba(240, 46, 170, 0.1) 0 0 25px, rgba(240, 46, 170, 0.05) 0 0 30px;
 }

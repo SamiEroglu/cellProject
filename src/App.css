@@ -1,75 +1,78 @@
 @font-face {
-  font-family: "republica";
-  src: url("/public/Cocogoose_trial.otf") format("truetype");
+	font-family: "republica";
+	src: url("/public/Cocogoose_trial.otf") format("truetype");
 }
 html,
 body {
-  overflow-x: hidden;
-  margin: 0;
-  background-color: black;
-  font-family: "republica";
-  color: aliceblue;
+	overflow-x: hidden;
+	margin: 0;
+	background-color: black;
+	font-family: "republica";
+	color: aliceblue;
 }
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 .tubitaklogostyle {
-  width: 12vw;
+	width: 12vw;
 }
 .huclogostyle {
-  width: 12vw;
-  border-radius: 50%;
+	width: 12vw;
+	border-radius: 50%;
 }
 .cvlogostyle {
-  width: 12vw;
+	width: 12vw;
+}
+.teststyle {
+	width: 11vw;
 }
 .mercekstyle {
-  width: 46vw;
+	width: 46vw;
 }
 *::-webkit-scrollbar,
 *::-webkit-scrollbar-thumb {
-  width: 0.65vw;
-  border-radius: 15px;
-  background-clip: padding-box;
-  border: 3px solid transparent;
+	width: 0.65vw;
+	border-radius: 15px;
+	background-clip: padding-box;
+	border: 3px solid transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-  color: grey;
-  box-shadow: inset 0 0 0 2vw;
+	color: grey;
+	box-shadow: inset 0 0 0 2vw;
 }
 .loadingcont {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .spinner {
-  border-radius: 50vw;
-  border: 2vw solid black;
+	border-radius: 50vw;
+	border: 2vw solid black;
 }
 .ellipseshadow {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background-color: rgb(128, 128, 128);
-  opacity: 0.4;
-  animation: shading ease-in-out 2.5s;
-  transform: scale(2, 0.4);
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: rgb(128, 128, 128);
+	opacity: 0.4;
+	animation: shading ease-in-out 2.5s;
+	transform: scale(2, 0.4);
 }
 @keyframes shading {
-  from {
-    filter: blur(10px);
-  }
-  to {
-    filter: blur(50px);
-  }
+	from {
+		filter: blur(10px);
+	}
+	to {
+		filter: blur(50px);
+	}
 }

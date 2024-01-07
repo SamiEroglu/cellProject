@@ -1,63 +1,63 @@
 .maincarousel-container {
-  display: flex;
-  flex-direction: column;
-  height: 48vw;
+	display: flex;
+	flex-direction: column;
+	height: 48vw;
 }
 .carousel-title {
-  height: 6vw;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 4vw;
-  text-shadow: #ffff 0 0 3px, rgba(240, 46, 170, 0.4) 0 0 10px,
-    rgba(240, 46, 170, 0.3) 0 0 15px, rgba(240, 46, 170, 0.2) 0 0 20px,
-    rgba(240, 46, 170, 0.1) 0 0 25px, rgba(240, 46, 170, 0.05) 0 0 30px;
+	height: 6vw;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 4vw;
+	text-shadow: #ffff 0 0 3px, rgba(240, 46, 170, 0.4) 0 0 10px,
+		rgba(240, 46, 170, 0.3) 0 0 15px, rgba(240, 46, 170, 0.2) 0 0 20px,
+		rgba(240, 46, 170, 0.1) 0 0 25px, rgba(240, 46, 170, 0.05) 0 0 30px;
 }
 .carouselcontainer {
-  width: 58%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	width: 58%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .carouselcontainer span {
-  margin-left: 5vw;
-  margin-right: 5vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
 }
 .carouseldiv {
-  width: 100%;
-  height: 99%;
-  display: flex;
-  flex-direction: row;
+	width: 100%;
+	height: 99%;
+	display: flex;
+	flex-direction: row;
 }
 .div1 {
-  width: 3%;
+	width: 3%;
 }
 .div3 {
-  width: 40%;
-  height: 34vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: start;
-  padding-left: 3vw;
-  padding-right: 3vw;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-  font-size: 0.9vw;
-  background-color: rgba(122, 115, 115, 0.144);
-  border-radius: 100px;
-  border-style: groove;
-  border-color: rgba(122, 115, 115, 0.537);
-  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
-    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
-    rgba(240, 46, 170, 0.05) 0px 25px;
+	width: 40%;
+	height: 34vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: start;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	font-size: 0.9vw;
+	background-color: rgba(122, 115, 115, 0.144);
+	border-radius: 100px;
+	border-style: groove;
+	border-color: rgba(122, 115, 115, 0.537);
+	box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+		rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+		rgba(240, 46, 170, 0.05) 0px 25px;
 }
 .div3 p {
-  height: fit-content;
+	height: fit-content;
 }
 .hAHFsi {
-  pointer-events: none;
+	pointer-events: none;
 }
