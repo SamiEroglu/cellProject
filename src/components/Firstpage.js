@@ -12,31 +12,31 @@ const handleClickScroll = () => {
 
 function Firstpage() {
 	return (
-		<div className='fpsize'>
-			<div className='fp-container'>
-				<div className='fp-isim'>
+		<div className="fpsize">
+			<div className="fp-container">
+				<div className="fp-isim">
 					Matematik ve Fen Bilimleri Eğitimi Anabilim Dalı / Fen Eğitimi Bilim
 					Dalı / Doktora Tez Çalışması
 				</div>
-				<div className='fp-icons'>
-					<div className='hclogo' onClick={handleClickScroll}>
+				<div className="fp-icons">
+					<div className="hclogo" onClick={handleClickScroll}>
 						<Huclogo />
 					</div>
-					<a className='cvlogo' href='CV.pdf' target='_blank'>
+					<a className="cvlogo" href="CV.pdf" target="_blank">
 						<CVlogo />
 					</a>
-					<a className='cvlogo test' href='test.pdf' target='_blank'>
+					<a className="cvlogo test" href="test.pdf" target="_blank">
 						<TestIcon />
 					</a>
 				</div>
-				<div className='fp-fakulte'>İBRAHİM ENES TOSUN</div>
-				<div className='fp-yazi'>
-					Hücre Ünitesi için Geliştirilen WEB 2.0 Aracının Öğrencilerin Akademik
-					Başarılarına, Görsel Alıgılarına ve Sistemsel Düşünme Becerilerine
-					Etkisi
+				<div className="fp-fakulte">İBRAHİM ENES TOSUN</div>
+				<div className="fp-yazi">
+					Hücre ve Bölünmeler Ünitesi için Geliştirilen WEB 2.0 Aracının
+					Öğrencilerin Akademik Başarılarına, Uzamsal Görsel Algılarına ve
+					Kavramsal Öğrenmelerine Etkisi
 				</div>
 			</div>
-			<div id='section-1'>
+			<div id="section-1">
 				<Secondpage />
 			</div>
 		</div>
